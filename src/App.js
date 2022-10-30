@@ -25,7 +25,7 @@ const App = () => {
 				<button
 					onClick={() => updateCalc(i.toString())}
 					key={i}
-					className="bg-light-grayish-cyan text-dark-cyan text-3xl font-medium rounded shadow py-[12px]"
+					className="bg-light-grayish-cyan text-dark-cyan text-[24px] font-bold rounded shadow py-[12px]"
 				>
 					{i}
 				</button>
@@ -36,6 +36,7 @@ const App = () => {
 
 	const calculate = () => {
 		setResult(resultTemp);
+		setCalc(resultTemp);
 	};
 
 	const clear = () => {
@@ -66,19 +67,19 @@ const App = () => {
 
 							<button
 								onClick={() => updateCalc("0")}
-								className="bg-light-grayish-cyan text-dark-cyan text-3xl font-medium rounded shadow py-[12px]"
+								className="bg-light-grayish-cyan text-dark-cyan text-[24px] font-bold rounded shadow py-[12px]"
 							>
 								0
 							</button>
 							<button
 								onClick={() => updateCalc(".")}
-								className="bg-light-grayish-cyan text-dark-cyan text-3xl font-medium rounded shadow py-[12px]"
+								className="bg-light-grayish-cyan text-dark-cyan text-[24px] font-bold rounded shadow py-[12px]"
 							>
 								.
 							</button>
 							<button
 								onClick={clear}
-								className="bg-light-grayish-cyan text-dark-cyan text-3xl font-medium rounded shadow py-[12px]"
+								className="bg-light-grayish-cyan text-dark-cyan text-[24px] font-bold rounded shadow py-[12px]"
 							>
 								C
 							</button>
@@ -90,25 +91,25 @@ const App = () => {
 						<div className="flex flex-col gap-[12px]">
 							<button
 								onClick={() => updateCalc("+")}
-								className="bg-yellow text-dark-cyan text-3xl font-medium rounded shadow py-[12px]"
+								className="bg-yellow text-dark-cyan text-[24px] font-bold rounded shadow py-[12px]"
 							>
 								+
 							</button>
 							<button
 								onClick={() => updateCalc("-")}
-								className="bg-yellow text-dark-cyan text-3xl font-medium rounded shadow py-[12px]"
+								className="bg-yellow text-dark-cyan text-[24px] font-bold rounded shadow py-[12px]"
 							>
 								-
 							</button>
 							<button
 								onClick={() => updateCalc("*")}
-								className="bg-yellow text-dark-cyan text-3xl font-medium rounded shadow py-[12px]"
+								className="bg-yellow text-dark-cyan text-[24px] font-bold rounded shadow py-[12px]"
 							>
 								*
 							</button>
 							<button
 								onClick={() => updateCalc("/")}
-								className="bg-yellow text-dark-cyan text-3xl font-medium rounded shadow py-[12px]"
+								className="bg-yellow text-dark-cyan text-[24px] font-bold rounded shadow py-[12px]"
 							>
 								/
 							</button>
@@ -117,13 +118,13 @@ const App = () => {
 
 					<button
 						onClick={clearAll}
-						className="col-span-2 bg-[#ff006f] text-white text-3xl font-medium rounded shadow py-[12px]"
+						className="col-span-2 bg-[#ff006f] text-white text-[24px] font-bold rounded shadow py-[12px]"
 					>
 						Reset
 					</button>
 					<button
 						onClick={calculate}
-						className="col-span-2 bg-dark-cyan text-white text-3xl font-medium rounded shadow py-[12px]"
+						className="col-span-2 bg-dark-cyan text-white text-[24px] font-bold rounded shadow py-[12px]"
 					>
 						=
 					</button>
